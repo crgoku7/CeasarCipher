@@ -1,0 +1,116 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px; /* Adds space between the stacked divs */
+}
+
+.horizontal-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap : 80px
+    /* Adds space between the horizontal items */
+}
+
+.horizontal-content-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap : 30px
+    /* Adds space between the horizontal items */
+}
+
+.app-header {
+    width: 100%;
+    padding: 20px;
+    background-color: #e0e0e0;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+textarea{
+    overflow: hidden;
+    resize: none; 
+}
+
+
+.text-input[contenteditable]:empty:before {
+    content: attr(placeholder);
+    color: #888;
+}
+
+
+.text {
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    /* margin: 0 auto; */
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 200px;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    margin-right: 0px;
+  
+  }
+
+.text-shift {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 2rem;
+    padding: 1px;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #000; /* Updated border property */
+    width: 30px;
+    text-align: center;
+}
+
+p{
+    font-size: 2rem;
+    padding: 1px;
+}
+
+.outer-wheel-container {
+    position: relative;
+    width: 512px;
+    height: 512px;
+    
+}
+
+.outer{
+    width: 512px;
+    height: 512px;
+    transform-origin: center center;
+    border-radius: 50%;
+    pointer-events: auto;
+    
+    
+    
+}
+
+.inner {
+    transform: rotate((-360/50)deg);
+    position: absolute;
+    width: 365px; /* Adjust the size as needed */
+    height: 365px; /* Adjust the size as needed */
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    
+    transform:  translate(-50%, -50%);
+
+}
